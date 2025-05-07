@@ -1,0 +1,49 @@
+{
+  "expo": {
+    "name": "GYMDER",
+    "slug": "gymder",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/gymderLogo.jpg",
+    "userInterfaceStyle": "dark",
+    "splash": {
+      "image": "./assets/images/gymderLogo.jpg",
+      "resizeMode": "contain",
+      "backgroundColor": "#121212"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.gymder.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/images/gymderLogo.jpg",
+        "backgroundColor": "#121212"
+      },
+      "package": "com.gymder.app",
+      "permissions": [
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "READ_MEDIA_IMAGES"
+      ],
+      "softwareKeyboardLayoutMode": "pan"
+    },
+    "web": {
+      "favicon": "./assets/images/gymderLogo.jpg"
+    },
+    "scheme": "gymder",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "The app accesses your photos to let you share them with your workout partners.",
+          "cameraPermission": "The app accesses your camera to let you take profile photos."
+        }
+      ]
+    ]
+  }
+}
